@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
 }
 
@@ -11,4 +11,90 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+} */
+* {
+  box-sizing: border-box;
 }
+
+body {
+  margin: 16px;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #2e2f42;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* =====Task 1===== */
+#categories {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 392px;
+  margin: 0 auto;
+  padding: 24px;
+  list-style-type: none;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.item > h2 {
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33;
+}
+
+#categories > .item {
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #f6f6fe;
+}
+
+.item ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item li {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  line-height: 1.5;
+}
+
+/* =====Task 1 (END)===== */
+
+/* =====Task 2===== */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 48px 24px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.gallery img {
+  max-width: 360px;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* =====Task 2===== */
